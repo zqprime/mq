@@ -13,12 +13,11 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaConfig {
 
     @Bean
-    public NewTopic topic() {
+    public NewTopic quickstartEvents() {
         return TopicBuilder.name("quickstart-events")
                 .partitions(3)
                 .replicas(2)
                 .build();
     }
-
 
 }

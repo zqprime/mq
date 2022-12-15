@@ -1,0 +1,21 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: study-test
+  kafka:
+    bootstrap-servers: 162.14.97.85:9092
+#    streams:
+#      bootstrap-servers: 162.14.97.85:9092
+#      properties:
+#        default:
+#          key:
+#            serde: org.apache.kafka.common.serialization.Serdes
+#          value:
+#            serde: org.springframework.kafka.support.serializer.JsonSerde
+#          timestamp:
+#            extractor: org.apache.kafka.streams.processor.WallclockTimestampExtractor
+
+    consumer:
+      auto-offset-reset: earliest
